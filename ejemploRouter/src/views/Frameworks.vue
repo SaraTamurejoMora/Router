@@ -16,6 +16,7 @@ const frameworks = ref([
             <RouterLink :to="`/frameworks/${framework.id}`">{{framework.name}}</RouterLink>
         </li>
     </ul>
-    <RouterView></RouterView>
+    <!--RouterView :key="$route.fullPath"></RouterView-->
+    <RouterView/>
 </template>
 
